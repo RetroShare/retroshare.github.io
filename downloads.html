@@ -106,8 +106,25 @@
 
     <div class="tiny-10 columns">
       <h2>Debian</h2>
-      <p>Retroshare is currently available on Debian Wheezy and Squeeze for ARMEL, ARMHF, i386 and amd64 architectures.</p>
-      <p>Link: <a href="http://sourceforge.net/projects/retroshare/files/RetroShare/0.6.0-rc2/">Debian packages</a></p>
+      <p>Retroshare is currently available on Debian 7.0 Wheezy and 6.0 Squeeze for ARMEL, ARMHF, i386 and amd64 architectures and for 8.0 Jessie.</p>
+      <p>You can download packages from: <a href="http://sourceforge.net/projects/retroshare/files/RetroShare/0.6.0-rc2/">Debian packages</a></p>
+      
+      <p>Stable and Nightly Builds are also available here:</p>
+      <p><strong>Stable:</strong> <a href="https://software.opensuse.org/download.html?project=home%3AAsamK%3ARetroShare&package=retroshare06">retroshare</a></p>
+	  <p><strong>Nightly development releases:</strong> <a href=
+      "https://software.opensuse.org/download.html?project=home%3AAsamK%3ARetroShare&package=retroshare06-git">retroshare-unstable</a></p>      
+      <p>To receive RetroShare via your package manager, you can add the repository to your sources.</p>
+      
+      <blockquote>
+        # for Retroshare releases only<br>
+        &nbsp;&nbsp;&nbsp;<strong>sudo echo 'deb http://download.opensuse.org/repositories/home:/AsamK:/RetroShare/Debian_8.0/ /' >> /etc/apt/sources.list.d/retroshare06.list</strong><br>
+        # for Retroshare nightly builds<br>
+        &nbsp;&nbsp;&nbsp;<strong>sudo echo 'deb http://download.opensuse.org/repositories/home:/AsamK:/RetroShare/Debian_8.0/ /' >> /etc/apt/sources.list.d/retroshare06-git.list </strong><br>
+        # then<br>
+        &nbsp;&nbsp;&nbsp;<strong>sudo apt-get update</strong><br>
+        &nbsp;&nbsp;&nbsp;<strong>sudo apt-get install retroshare06</strong><br>
+      </blockquote>
+      
     </div>
   </div>
 

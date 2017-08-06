@@ -67,11 +67,11 @@
     <div class="tiny-10 columns">
       <h2 id="windows"><a href="#windows">Windows XP / Vista / 7 / 10</a></h2>
       <p>Links: 
-		<a href="https://github.com/RetroShare/RetroShare/releases/download/v0.6.2/RetroShare-0.6.2-20170311-733b1143-Qt-4.8.7-setup.exe">Retroshare-0.6.2-Qt4</a> Installer,
-		<a href="https://github.com/RetroShare/RetroShare/releases/download/v0.6.2/RetroShare-0.6.2-20170311-733b1143-Qt-5.8.0-setup.exe">Retroshare-0.6.2-Qt5</a> Installer
+		<a href="https://github.com/RetroShare/RetroShare/releases/download/v0.6.3/RetroShare-0.6.3-20170806-3ae85dbc-Qt-4.8.7-setup.exe">Retroshare-0.6.3-Qt4</a> Installer,
+		<a href="https://github.com/RetroShare/RetroShare/releases/download/v0.6.3/RetroShare-0.6.3-20170806-3ae85dbc-Qt-5.9.0-setup.exe">Retroshare-0.6.3-Qt5</a> Installer
 		</p>
       <p>The installers for Windows contains the portable and normal install, and plugins.</p>
-		<p>Checksums: <a href="https://github.com/RetroShare/RetroShare/releases/download/v0.6.2/chksums.txt.asc">checksum.txt</a></p>
+		<p>Checksums: <a href="https://github.com/RetroShare/RetroShare/releases/download/v0.6.3/chksums.txt.asc">checksum.txt</a></p>
     </div>
   </div>
 
@@ -91,7 +91,7 @@
 
     <div class="tiny-10 columns">
       <h2 id="ubuntu"><a href="#ubuntu">Ubuntu</a></h2>
-      <p>Retroshare is currently available on all Ubuntu distributions up to Yakkety (16.10).<br></p>
+      <p>Retroshare is currently available on all Ubuntu distributions up to Zesty (17.04).<br></p>
 
       <p>To install Retroshare on ubuntu, please use one of the following two PPA repositories:</p>
 
@@ -117,13 +117,20 @@
 
   <div class="row package">
     <div class="tiny-2 columns"><img alt="Debian logo" id="debian" src="img/debian-logo.svg"></div>
-
-    <div class="tiny-10 columns">
+	  <div class="tiny-10 columns">
       <h2 id="debian"><a href="#debian">Debian</a></h2>
+	<p>
+	Retroshare is not currently available on Debian because of <a href="https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=850421">a bug</a> in libsqlcipher0-3.2.0 which is
+	shipped with Debian stretch. Users on stretch who want to use Retroshare will need to manually upgrade libsqlcipher0 to version
+	3.4.1 and then <a href="http://retroshare.readthedocs.io/en/latest/developer/compilation/">compile Retroshare</a>. As soon as Debian ships a fixed version
+	of libsqlcipher0, we will provide ready-to-use packages.
+	</p>
+
+<!--   
       <p>Retroshare is currently available on Debian Stretch for i386 and amd64 architectures.</p>
       <p>You can download packages from: <a href="https://github.com/RetroShare/RetroShare/releases/">Debian packages</a></p>
-      
-      <p>Stable and Nightly Builds are also available here:</p>
+   -->   
+      <p>Note: unofficial stable and nightly builds are also available here:</p>
       <p><strong>Stable:</strong> <a href="https://software.opensuse.org/download.html?project=home%3AAsamK%3ARetroShare&package=retroshare06">retroshare</a></p>
 	  <p><strong>Nightly Builds:</strong> <a href=
       "https://software.opensuse.org/download.html?project=home%3AAsamK%3ARetroShare&package=retroshare06-git">retroshare-unstable</a></p>      
@@ -148,7 +155,7 @@
 
     <div class="tiny-10 columns">
       <h2 id="source"><a href="#source">Source Tarballs</a></h2>
-      <p>Link: <a href="https://github.com/RetroShare/RetroShare/archive/v0.6.2.tar.gz">RetroShare-0.6.2.tar.gz</a> <a href="https://github.com/RetroShare/RetroShare/releases/download/v0.6.2/chksums.txt.asc">checksums</a></p>
+      <p>Link: <a href="https://github.com/RetroShare/RetroShare/archive/v0.6.3.tar.gz">RetroShare-0.6.3.tar.gz</a> <a href="https://github.com/RetroShare/RetroShare/releases/download/v0.6.3/chksums.txt.asc">checksums</a></p>
       
       <p>Development Snapshots from GitHub: <a href="https://github.com/RetroShare/RetroShare/archive/master.tar.gz">.tar.gz</a> <a href="https://github.com/RetroShare/RetroShare/archive/master.zip">.zip</a></p>
       <p>Mirror at GitLab (unofficial): <a href="https://gitlab.com/RetroShare/RetroShare/repository/archive.tar.gz?ref=master">.tar.gz</a> <a href="https://gitlab.com/RetroShare/RetroShare/repository/archive.zip?ref=master">.zip</a> <a href="https://gitlab.com/RetroShare/RetroShare/repository/archive.tar.bz2?ref=master">.tar.bz2</a> <a href="https://gitlab.com/RetroShare/RetroShare/repository/archive.tar?ref=master">.tar</a></p>

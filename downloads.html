@@ -76,17 +76,6 @@
   </div>
 
   <div class="row package">
-    <div class="tiny-2 columns"><img alt="Apple logo" id="mac" src="img/apple-logo.svg"></div>
-
-    <div class="tiny-10 columns">
-      <h2 id="mac"><a href="#mac">Mac OSX</a></h2>
-      <p>RetroShare is currently available for MacOS (v0.6.0 only, on Sept 3, 2016)</p>
-      <p>Link: <a href="https://github.com/RetroShare/RetroShare/releases/download/v0.6.0/Retroshare-0.6.0-OSX-20160209-4033f35f.dmg">RetroShare_v0.6.0.dmg</a> </p>
-		<p>Checksums: <a href="https://github.com/RetroShare/RetroShare/releases/download/v0.6.0/checksums.txt.asc">checksum.txt</a></p>
-    </div>
-  </div>
-
-  <div class="row package">
     <div class="tiny-2 columns"><img alt="Ubuntu logo" id="ubuntu" src="img/ubuntu-logo.svg"></div>
 
     <div class="tiny-10 columns">
@@ -108,12 +97,30 @@
         &nbsp;&nbsp;&nbsp;<strong>sudo add-apt-repository ppa:retroshare/unstable</strong><br>
         # then<br>
         &nbsp;&nbsp;&nbsp;<strong>sudo apt-get update</strong><br>
-        &nbsp;&nbsp;&nbsp;<strong>sudo apt-get install retroshare06</strong><br>
+        &nbsp;&nbsp;&nbsp;<strong>sudo apt-get install retroshare</strong><br>
       </blockquote>
 
-		<p>Packages for Ubuntu compatible for the Raspberry Pi are also available on <a href="https://github.com/RetroShare/RetroShare/releases/">GitHub</a></p>
+		<p><b>Important note: </b>Ubuntu package names have changed (to comply with standards). The new packages names drop the 06 suffix and are declared incompatible with the old packages. As a consequence, if you upgrade Retroshare, first uninstall existing packages then install the new ones:</p>
+      <blockquote>
+        &nbsp;&nbsp;&nbsp;<strong>sudo apt-get remove retroshare06</strong><br>
+        &nbsp;&nbsp;&nbsp;<strong>sudo apt-get install retroshare</strong><br>
+      </blockquote>
+		<!--<p>Packages for Ubuntu compatible for the Raspberry Pi are also available on <a href="https://github.com/RetroShare/RetroShare/releases/">GitHub</a></p>-->
     </div>
   </div>
+
+  <div class="row package">
+    <div class="tiny-2 columns"><img alt="Apple logo" id="mac" src="img/apple-logo.svg"></div>
+
+    <div class="tiny-10 columns">
+      <h2 id="mac"><a href="#mac">Mac OSX</a></h2>
+      <p>RetroShare is currently available for MacOS (v0.6.0 only, on Sept 3, 2016)</p>
+      <p>Link: <a href="https://github.com/RetroShare/RetroShare/releases/download/v0.6.0/Retroshare-0.6.0-OSX-20160209-4033f35f.dmg">RetroShare_v0.6.0.dmg</a> </p>
+		<p>Checksums: <a href="https://github.com/RetroShare/RetroShare/releases/download/v0.6.0/checksums.txt.asc">checksum.txt</a></p>
+    </div>
+  </div>
+
+
 
   <div class="row package">
     <div class="tiny-2 columns"><img alt="Debian logo" id="debian" src="img/debian-logo.svg"></div>
@@ -149,6 +156,18 @@
     </div>
   </div>
 
+  <div class="row package">
+    <div class="tiny-2 columns"><img alt="AppImage logo" id="appimage" src="img/appimage.svg"></div>
+	  <div class="tiny-10 columns">
+      <h2 id="appimage"><a href="#appimage">Linux x86_64 AppImage</a></h2>
+		<p>
+			We provide an AppImage <a href="https://github.com/RetroShare/RetroShare/releases/download/v0.6.3/RetroShare-0.6.3.glibc2.16-x86_64.AppImage">here</a> so that you can test Retroshare in one click. 
+			This is purely experimental. In particular, the AppImage does not include the plugins yet. The AppImage has been tested successfully on Debian, Ubuntu, Mint.
+		</p>
+	</div>
+	</div>
+  </div>
+	
   <div class="row package">
     <div class="tiny-2 columns"><img alt="Tar.gz logo" src="img/tgz-logo.svg"></div>
 

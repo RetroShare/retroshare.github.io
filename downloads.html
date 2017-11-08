@@ -127,16 +127,20 @@
     <div class="tiny-2 columns"><img alt="Debian logo" id="debian" src="img/debian-logo.svg"></div>
 	  <div class="tiny-10 columns">
       <h2 id="debian"><a href="#debian">Debian</a></h2>
-	<p>
-	Because of <a href="https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=850421">a bug</a> in libsqlcipher0-3.2.0 which is
-	shipped with Debian stretch, users on stretch who want to use Retroshare will need to manually upgrade libsqlcipher0 to version
-	3.4.1 and then install our packages with the correct dependency. All files are available in the <a href="https://github.com/RetroShare/RetroShare/releases/tag/v0.6.3">github repository</a>.
-	</p>
-
-<!--   
-      <p>Retroshare is currently available on Debian Stretch for i386 and amd64 architectures.</p>
-      <p>You can download packages from: <a href="https://github.com/RetroShare/RetroShare/releases/">Debian packages</a></p>
-   -->   
+      <p>
+        The easiest way to install Retroshare in Debian is through <a href="#appimage">AppImage</a>. 
+        It doesn't include any plugins, but other than that, it works perfectly.
+      </p>
+      <p>
+        Alternatively, you can install the debfile directly. However, due to
+        <a href="https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=850421">a bug</a> in libsqlcipher0-3.2.0, 
+      shipped with Debian Stretch, you will need to manually upgrade libsqlcipher0 to version
+      3.4.1 and then install our package.
+      To do that, please download and install first libsqlcipher0-3.4.1 from 
+      <a href="https://debian.pkgs.org/sid/debian-main-amd64/libsqlcipher0_3.4.1-1_amd64.deb.html#download">pkgs.org</a> 
+      and then Retroshare 0.6.3 from <a href="https://github.com/RetroShare/RetroShare/releases/tag/v0.6.3">Github</a>.
+      </p>
+      
       <p>Note: unofficial stable and nightly builds are also available here:</p>
       <p><strong>Stable:</strong> <a href="https://software.opensuse.org/download.html?project=home%3AAsamK%3ARetroShare&package=retroshare06">retroshare</a></p>
 	  <p><strong>Nightly Builds:</strong> <a href=

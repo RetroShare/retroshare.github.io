@@ -61,34 +61,63 @@
     </div>
   </header>
 
+<div class="row package">
+	<div class="tiny-1 columns">&nbsp;</div>
+	<div class="tiny-10 columns">
+	<h2>Important note</h2>
+	Retroshare is available on most systems. You can find it below in two versions: 
+	<ul>
+		<li>The <i>classical</i> Retroshare version, recommended if you use it to connect to trusted friends</li>
+		<li>The <i>Tor-Only</i> version, which uses only Tor as a transport layer, which is recommended if you plan to try Retroshare by connecting to non trusted persons. This version is shipped with its own Tor executable and should not require you to install Tor.</li>
+	</ul>
+  More information is available on the <a href="https://retroshareteam.wordpress.com/2018/03/04/release-notes-for-v0-6-4/">release blog post for version 0.6.4.</a>
+  </div>
+  </div>
+
   <div class="row package">
     <div class="tiny-2 columns"><img alt="Windows logo" src="img/windows-logo.svg"></div>
 
     <div class="tiny-10 columns">
       <h2 id="windows"><a href="#windows">Windows XP / Vista / 7 / 10</a></h2>
       <p>Links: 
-		<a href="https://github.com/RetroShare/RetroShare/releases/download/v0.6.3/RetroShare-0.6.3-20170806-3ae85dbc-Qt-4.8.7-setup.exe">Retroshare-0.6.3-Qt4</a> Installer,
-		<a href="https://github.com/RetroShare/RetroShare/releases/download/v0.6.3/RetroShare-0.6.3-20170806-3ae85dbc-Qt-5.9.0-setup.exe">Retroshare-0.6.3-Qt5</a> Installer
+		<a href="https://github.com/RetroShare/RetroShare/releases/download/v0.6.4/RetroShare-0.6.4-20180304-XXXXXX-Qt-4.8.7-setup.exe">Retroshare-0.6.4-Qt4</a> Installer,
+		<a href="https://github.com/RetroShare/RetroShare/releases/download/v0.6.4/RetroShare-0.6.4-20180304-XXXXXX-Qt-5.9.0-setup.exe">Retroshare-0.6.4-Qt5</a> Installer
 		</p>
       <p>The installers for Windows contains the portable and normal install, and plugins.</p>
-		<p>Checksums: <a href="https://github.com/RetroShare/RetroShare/releases/download/v0.6.3/chksums.txt.asc">checksum.txt</a></p>
+		<p>Checksums: <a href="https://github.com/RetroShare/RetroShare/releases/download/v0.6.4/chksums.txt.asc">checksum.txt</a></p>
     </div>
   </div>
 
+  <div class="row package">
+    <div class="tiny-2 columns"><img alt="AppImage logo" id="appimage" src="img/appimage.svg"></div>
+	  <div class="tiny-10 columns">
+      <h2 id="appimage"><a href="#appimage">Linux x86_64 AppImage</a></h2>
+		<p>
+			We provide two AppImage packages:
+			<ul>
+				<li><a href="https://github.com/RetroShare/RetroShare/releases/download/v0.6.4/RetroShare-0.6.4.20180303.593e57b1-x86_64.AppImage">Retroshare AppImage</a></li>
+				<li><a href="https://github.com/RetroShare/RetroShare/releases/download/v0.6.4/RetroShare-0.6.4.20180303.593e57b1-x86_64.AppImage">Retroshare AppImage, Tor-only version</a></li>
+			</ul>
+			These AppImage's have been successfully tested on Debian, Ubuntu and Mint, and probably work on many more linux distributions.
+		</p>
+	</div>
+	</div>
+  </div>
+	
   <div class="row package">
     <div class="tiny-2 columns"><img alt="Ubuntu logo" id="ubuntu" src="img/ubuntu-logo.svg"></div>
 
     <div class="tiny-10 columns">
       <h2 id="ubuntu"><a href="#ubuntu">Ubuntu</a></h2>
-      <p>Retroshare is currently available on all Ubuntu distributions up to Zesty (17.04).<br></p>
+      <p>Retroshare is currently available on all Ubuntu distributions up to Artful (17.10).<br></p>
 
       <p>To install Retroshare on ubuntu, please use one of the following two PPA repositories:</p>
 
       <p><strong>Stable:</strong> <a href="https://launchpad.net/~retroshare/+archive/ubuntu/stable">retroshare stable</a></p>
  
-      <p><strong>Regular development releases:</strong> <a href="https://launchpad.net/~retroshare/+archive/ubuntu/unstable">retroshare unstable</a></p>
+      <p><strong>Regular development snapshots:</strong> <a href="https://launchpad.net/~retroshare/+archive/ubuntu/unstable">retroshare unstable</a></p>
 
-      <p>Development releases are always tested and therefore reasonnably safe to use. They happen irregularly, with an average of 2 weeks between updates.</p>
+      <p>Development snapshots are always tested and therefore reasonnably safe to use. They happen irregularly, with an average of 2 weeks between updates.</p>
 
       <blockquote>
         # for Retroshare releases only<br>
@@ -100,11 +129,11 @@
         &nbsp;&nbsp;&nbsp;<strong>sudo apt-get install retroshare</strong><br>
       </blockquote>
 
-		<p><b>Important note: </b>Ubuntu package names have changed (to comply with standards). The new packages names drop the 06 suffix and are declared incompatible with the old packages. As a consequence, if you upgrade Retroshare, first uninstall existing packages then install the new ones:</p>
+<!--		<p><b>Important note: </b>Ubuntu package names have changed (to comply with standards). The new packages names drop the 06 suffix and are declared incompatible with the old packages. As a consequence, if you upgrade Retroshare, first uninstall existing packages then install the new ones:</p>
       <blockquote>
         &nbsp;&nbsp;&nbsp;<strong>sudo apt-get remove retroshare06</strong><br>
         &nbsp;&nbsp;&nbsp;<strong>sudo apt-get install retroshare</strong><br>
-      </blockquote>
+      </blockquote> -->
 		<!--<p>Packages for Ubuntu compatible for the Raspberry Pi are also available on <a href="https://github.com/RetroShare/RetroShare/releases/">GitHub</a></p>-->
     </div>
   </div>
@@ -116,12 +145,11 @@
       <h2 id="mac"><a href="#mac">Mac OSX</a></h2>
       <p>RetroShare is currently available for OSX. Note: the packaging and compilation is not ours. It's been made 
 			automatically using <a href="https://travis-ci.org">Travis-CI</a>.</p>
-      <p>Link: <a href="https://github.com/RetroShare/RetroShare/releases/download/v0.6.3/RetroShare-0.6.3-OSX-20170821-cebcc4b4.dmg">RetroShare_v0.6.3.dmg</a> </p>
-		<p>Checksums: <a href="https://github.com/RetroShare/RetroShare/releases/download/v0.6.3/checksums.txt.asc">checksum.txt</a></p>
+      <p>Link: <a href="https://github.com/RetroShare/RetroShare/releases/download/v0.6.4/RetroShare-0.6.4-20180303.9d6e642-Mac-OSX.dmg">RetroShare_v0.6.4.dmg</a> </p>
+      <p>Link: <a href="https://github.com/RetroShare/RetroShare/releases/download/v0.6.4/RetroShare-Tor-0.6.4-20180303.9d6e642-Mac-OSX.dmg">RetroShare_v0.6.4 TorOnly.dmg</a> </p>
+		<p>Checksums: <a href="https://github.com/RetroShare/RetroShare/releases/download/v0.6.4/checksums.txt.asc">checksum.txt</a></p>
     </div>
   </div>
-
-
 
   <div class="row package">
     <div class="tiny-2 columns"><img alt="Debian logo" id="debian" src="img/debian-logo.svg"></div>
@@ -138,7 +166,7 @@
       3.4.1 and then install our package.
       To do that, please download and install first libsqlcipher0-3.4.1 from 
       <a href="https://debian.pkgs.org/sid/debian-main-amd64/libsqlcipher0_3.4.1-1_amd64.deb.html#download">pkgs.org</a> 
-      and then Retroshare 0.6.3 from <a href="https://github.com/RetroShare/RetroShare/releases/tag/v0.6.3">Github</a>.
+      and then Retroshare 0.6.4 from <a href="https://github.com/RetroShare/RetroShare/releases/tag/v0.6.4">Github</a>.
       </p>
       
       <p>Note: unofficial stable and nightly builds are also available here:</p>
@@ -161,24 +189,29 @@
     </div>
   </div>
 
-  <div class="row package">
-    <div class="tiny-2 columns"><img alt="AppImage logo" id="appimage" src="img/appimage.svg"></div>
-	  <div class="tiny-10 columns">
-      <h2 id="appimage"><a href="#appimage">Linux x86_64 AppImage</a></h2>
-		<p>
-			We provide an AppImage <a href="https://github.com/RetroShare/RetroShare/releases/download/v0.6.3/RetroShare-0.6.3.glibc2.16-x86_64.AppImage">here</a> so that you can test Retroshare in one click. 
-			This is purely experimental. In particular, the AppImage does not include the plugins yet. The AppImage has been tested successfully on Debian, Ubuntu, Mint.
-		</p>
+	<div class="row package">
+		<div class="tiny-2 columns"><img alt="Android logo" id="android" src="img/android-logo.svg"></div>
+		<div class="tiny-10 columns"><h2 id="android"><a href="#android">Android</a></h2>
+			<p>
+				We provide an experimental build of <a href="">Retroshare for Android</a> which only provides chat. 
+  				More information is available on the <a href="https://retroshareteam.wordpress.com/2018/03/04/release-notes-for-v0-6-4/">release blog post for version 0.6.4.</a>
+				</p>
+				<p>
+				You can also download RetroShare for Android Alpha prototype
+				packages from the
+				<a href="retroshare://channel?name=RetroShare%20Android%20builds%20by%20G10h4ck&id=e78125439fff723b3b15bb77b8f25dba">RetroShare Android builds by G10h4ck</a>
+				channel or from the
+				<a href="https://coppermine.diveni.re/~gio/RetroShare_Android/apk/" target="_blank">HTTP mirror</a>.
+			</p>
+		</div>
 	</div>
-	</div>
-  </div>
-	
+
   <div class="row package">
     <div class="tiny-2 columns"><img alt="Tar.gz logo" src="img/tgz-logo.svg"></div>
 
     <div class="tiny-10 columns">
       <h2 id="source"><a href="#source">Source Tarballs</a></h2>
-      <p>Link: <a href="https://github.com/RetroShare/RetroShare/archive/v0.6.3.tar.gz">RetroShare-0.6.3.tar.gz</a> <a href="https://github.com/RetroShare/RetroShare/releases/download/v0.6.3/chksums.txt.asc">checksums</a></p>
+      <p>Link: <a href="https://github.com/RetroShare/RetroShare/archive/v0.6.4.tar.gz">RetroShare-0.6.4.tar.gz</a> <a href="https://github.com/RetroShare/RetroShare/releases/download/v0.6.4/chksums.txt.asc">checksums</a></p>
       
       <p>Development Snapshots from GitHub: <a href="https://github.com/RetroShare/RetroShare/archive/master.tar.gz">.tar.gz</a> <a href="https://github.com/RetroShare/RetroShare/archive/master.zip">.zip</a></p>
       <p>Mirror at GitLab (unofficial): <a href="https://gitlab.com/RetroShare/RetroShare/repository/archive.tar.gz?ref=master">.tar.gz</a> <a href="https://gitlab.com/RetroShare/RetroShare/repository/archive.zip?ref=master">.zip</a> <a href="https://gitlab.com/RetroShare/RetroShare/repository/archive.tar.bz2?ref=master">.tar.bz2</a> <a href="https://gitlab.com/RetroShare/RetroShare/repository/archive.tar?ref=master">.tar</a></p>
@@ -186,11 +219,8 @@
     </div>
   </div>
 
-  <div class="row package">
-    <div class="columns">
 
-    </div>
-  </div>
+
 
   <div class="row">
     <div class="columns">
@@ -401,26 +431,6 @@
       </div>
     </div>
   </div>
-
-	<div class="row">
-		<div class="small-6 columns">
-			<div class="row package">
-				<div class="tiny-2 columns"><img alt="Android logo" id="android" src="img/android-logo.svg"></div>
-				<div class="tiny-10 columns"><h2 id="android"><a href="#android">Android</a></h2></div>
-			</div>
-			<div class="row package">
-				<div class="columns">
-					<p>
-						You can download RetroShare for Android Alpha prototype
-						packages from the
-						<a href="retroshare://channel?name=RetroShare%20Android%20builds%20by%20G10h4ck&id=e78125439fff723b3b15bb77b8f25dba">RetroShare Android builds by G10h4ck</a>
-						channel or from the
-						<a href="https://coppermine.diveni.re/~gio/RetroShare_Android/apk/" target="_blank">HTTP mirror</a>.
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
 
   <footer class="footer">
     <div class="row">

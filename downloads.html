@@ -81,7 +81,7 @@
 		</div>
 
 		<div class="tiny-10 columns">
-			<h2 id="windows"><a href="#windows">Windows XP / Vista / 7 / 10</a></h2>
+			<h2 id="windows"><a href="#windows">Windows</a></h2>
 			<ul>
 				<li><a href="https://github.com/RetroShare/RetroShare/releases/download/v0.6.4/RetroShare-0.6.4-20180312-91634ba6-Qt-4.8.7-setup.exe">Retroshare-0.6.4-Qt4</a> Installer</li>
 				<li><a href="https://github.com/RetroShare/RetroShare/releases/download/v0.6.4/RetroShare-0.6.4-20180312-91634ba6-Qt-5.9.1-setup.exe">Retroshare-0.6.4-Qt5</a> Installer</li>
@@ -95,7 +95,7 @@
 
 	<!-- Mac OSX -->
 	<div class="row package">
-		<div class="tiny-2 columns"><img alt="Apple logo" id="mac" src="img/apple-logo.svg"></div>
+		<div class="tiny-2 columns"><img alt="Apple logo" src="img/apple-logo.svg"></div>
 
 		<div class="tiny-10 columns">
 			<h2 id="mac"><a href="#mac">Mac OSX</a></h2>
@@ -113,10 +113,10 @@
 
 	<!-- GNU/Linux -->
 	<div class="row package">
-		<div class="tiny-2 columns"><img alt="Apple logo" id="mac" src="img/Gnulinux.svg"></div>
+		<div class="tiny-2 columns"><img alt="GNU/Linux logo" src="img/Gnulinux.svg"></div>
 
 		<div class="tiny-10 columns">
-			<h2 id="mac"><a href="#mac">GNU/Linux</a></h2>
+			<h2 id="gnulinux"><a href="#gnulinux">GNU/Linux</a></h2>
 			<p>
 			On most GNU/Linux distributions Retroshare is available along with
 			standard packages, so you should check before on your preferred
@@ -130,8 +130,23 @@
 	</div>
 	<!-- /GNU/Linux -->
 
+	<!-- ALT Linux -->
+	<div class="row package small-6">
+		<div class="tiny-2 columns"><img alt="ALT Linux logo" src="img/altlinux-logo.png"></div>
+
+		<div class="tiny-10 columns">
+			<h2 id="altlinux"><a href="#altlinux">ALT Linux</a></h2>
+
+			<p>
+			Retroshare is indipendently maintained on
+			<a href="https://packages.altlinux.org/en/srpms/retroshare" target="_blank">ALT Linux</a>.
+			</p>
+		</div>
+	</div>
+	<!-- ALT Linux -->
+
 	<!-- Android -->
-	<div class="row package">
+	<div class="row package small-6">
 		<div class="tiny-2 columns"><img alt="Android logo" id="android" src="img/android-logo.svg"></div>
 		<div class="tiny-10 columns"><h2 id="android"><a href="#android">Android</a></h2>
 			<p>
@@ -151,14 +166,14 @@
 	<!-- /Android -->
 
 	<!-- AppImage -->
-	<div class="row package">
+	<div class="row package small-6">
 		<div class="tiny-2 columns"><img alt="AppImage logo" id="appimage" src="img/appimage.svg" /></div>
 		<div class="tiny-10 columns">
 			<h2 id="appimage"><a href="#appimage">AppImage</a></h2>
 			<p>
 			If none of the distribution specific options fit your setup you
 			should try the following AppImages. Take care of selecting the one
-			which mach your CPU architecture (use x86_64 if you are unsure).
+			which match your CPU architecture (use x86_64 if you are unsure).
 			We expect those AppImages to work on most GNU/Linux distributions.
 			</p>
 			<ul>
@@ -172,11 +187,11 @@
 	<!-- /AppImage -->
 
 	<!-- ArchLinux -->
-	<div class="row package">
-		<div class="tiny-2 columns"><img alt="Arch Linux logo" id="archlinux" src="img/archlinux-logo.svg"></div>
+	<div class="row package small-6">
+		<div class="tiny-2 columns"><img alt="Arch Linux logo" src="img/archlinux-logo.svg"></div>
 
 		<div class="tiny-10 columns">
-			<h2 id="arch"><a href="#arch">Arch Linux</a></h2>
+			<h2 id="archlinux"><a href="#archlinux">Arch Linux</a></h2>
 
 			<p>
 			We distribute current Retroshare for Arch Linux through our
@@ -195,9 +210,31 @@
 	</div>
 	<!-- /ArchLinux -->
 
+	<!-- CentOS -->
+	<div class="row package small-6">
+		<div class="tiny-2 columns"><img alt="CentOS logo" src="img/centos-logo.svg"></div>
+
+		<div class="tiny-10 columns">
+			<h2 id="centos"><a href="#centos">CentOS</a></h2>
+
+			<p>
+			We distribute current Retroshare for CentOS through our
+			<a href="https://build.opensuse.org/project/show/network:retroshare">OBS</a>
+			repository. To add it you can use the following commands:
+			</p>
+			<blockquote>
+			#1 <code>rpm --import http://download.opensuse.org/repositories/network:/retroshare/CentOS_7/repodata/repomd.xml.key</code><br/>
+			#2 <code>wget -O /etc/yum.repos.d/retroshare https://download.opensuse.org/repositories/network:/retroshare/CentOS_7/network:retroshare.repo</code><br/>
+			#3 <code>yum update</code><br/>
+			#4 <code>yum install retroshare</code><br/>
+			</blockquote>
+		</div>
+	</div>
+	<!-- /CentOS -->
+
 	<!-- Debian -->
-	<div class="row package">
-		<div class="tiny-2 columns"><img alt="Debian logo" id="debian" src="img/debian-logo.svg"></div>
+	<div class="row package small-6">
+		<div class="tiny-2 columns"><img alt="Debian logo" src="img/debian-logo.svg"></div>
 		<div class="tiny-10 columns">
 			<h2 id="debian"><a href="#debian">Debian</a></h2>
 
@@ -241,7 +278,7 @@
 
 
 	<!-- Fedora -->
-	<div class="row package">
+	<div class="row package small-6">
 		<div class="tiny-2 columns"><img alt="Fedora logo" id="fedora" src="img/fedora-logo.svg"></div>
 
 		<div class="tiny-10 columns">
@@ -276,7 +313,7 @@
 	<!-- Fedora -->
 
 	<!-- Gentoo -->
-	<div class="row package">
+	<div class="row package small-6">
 		<div class="tiny-2 columns"><img alt="Gentoo logo" id="gentoo" src="img/gentoo-logo.svg"></div>
 		<div class="tiny-10 columns">
 			<h2 id="gentoo"><a href="#gentoo">Gentoo</a></h2>
@@ -294,8 +331,66 @@
 	</div>
 	<!-- /Gentoo -->
 
+	<!-- Mageia -->
+	<div class="row package small-6">
+		<div class="tiny-2 columns"><img alt="Mageia logo" src="img/mageia-logo.svg"></div>
+
+		<div class="tiny-10 columns">
+			<h2 id="mageia"><a href="#mageia">Mageia</a></h2>
+			<p>
+			We distribute current Retroshare for Mageia 6 through our
+			<a href="https://build.opensuse.org/project/show/network:retroshare">OBS</a>
+			repository. To install you can use the following commands:
+			</p>
+			<blockquote>
+			#1 <code>urpmi.addmedia retroshare https://download.opensuse.org/repositories/network:/retroshare/Mageia_6/</code><br/>
+			#2 <code>urpmi.update -a</code><br/>
+			#3 <code>urpmi retroshare</code><br/>
+			</blockquote>
+			<br/>
+			<p>
+			While Retroshare is independently maintained on
+			<a href="http://madb.mageia.org/package/show/name/retroshare/release/cauldron">Mageia Cauldron</a>.
+			</p>
+		</div>
+	</div>
+	<!-- /Mageia -->
+
+	<!-- openSUSE -->
+	<div class="row package small-6">
+		<div class="tiny-2 columns"><img alt="openSUSE logo" src="img/opensuse-logo.svg" /></div>
+
+		<div class="tiny-10 columns">
+			<h2 id="opensuse"><a href="#opensuse">openSUSE</a></h2>
+			<p>
+			We distribute current Retroshare for openSUSE through
+			<a href="http://openbuildservice.org/">Open Build Service</a>.
+			To add the openSUSE Retroshare repository first look for the correct
+			version on our
+			<a href="https://build.opensuse.org/project/show/network:retroshare">OBS repository</a>,
+			once you identified it you can add it using zypper for
+			expample for openSUSE Tumbleweed you could use the following command:
+			</p>
+
+			<blockquote>
+			#1 <code>zypper addrepo -f https://download.opensuse.org/repositories/network:/retroshare/openSUSE_Tumbleweed/ retroshare</code><br/>
+			</blockquote>
+
+			<p>
+			Once you add the correct repository you can install  Retroshare and
+			receive updates with the following commands:
+			</p>
+
+			<blockquote>
+			#1 <code>zypper refresh security</code><br/>
+			#2 <code>zypper install retroshare</code><br/>
+			</blockquote>
+		</div>
+	</div>
+	<!-- openSUSE -->
+
 	<!-- ROSA Linux -->
-	<div class="row package">
+	<div class="row package small-6">
 		<div class="tiny-2 columns"><img alt="ROSA Linux logo" src="img/rosalinux-logo.png"/></div>
 
 		<div class="tiny-10 columns">
@@ -309,8 +404,23 @@
 	</div>
 	<!-- ROSA Linux -->
 
+	<!-- Slackware -->
+	<div class="row package small-6">
+		<div class="tiny-2 columns"><img alt="Slackware logo" src="img/slackware-logo.svg"></div>
+
+		<div class="tiny-10 columns">
+			<h2 id="slackware"><a href="#slackware">Slackware</a></h2>
+
+			<p>
+			Retroshare is indipendently maintained on
+			<a href="https://slackbuilds.org/result/?search=retroshare">Slackware</a>.
+			</p>
+		</div>
+	</div>
+	<!-- /Slackware -->
+
 	<!-- Ubuntu -->
-	<div class="row package">
+	<div class="row package small-6">
 		<div class="tiny-2 columns"><img alt="Ubuntu logo" id="ubuntu" src="img/ubuntu-logo.svg"></div>
 
 		<div class="tiny-10 columns">
@@ -371,121 +481,6 @@
 		</div>
 	</div>
 	<!-- /Source Tarballs -->
-
-
-
-
-  <div class="row">
-    <div class="columns">
-      <h2>Independently Maintained Packages</h2>
-    </div>
-  </div>
-
-
-    <div class="row">
-    <div class="small-6 columns">
-      <div class="row package">
-        <div class="tiny-2 columns"><img alt="openSUSE logo" id="opensuse" src="img/opensuse-logo.svg"></div>
-
-        <div class="tiny-10 columns">
-          <h2 id="opensuse"><a href="#opensuse">openSUSE</a></h2>
-        </div>
-      </div>
-
-      <div class="row package">
-        <div class="columns">
-          <p>Retroshare is currently available on openSUSE.</p>
-          <p>Install stable release via: <a href="https://software.opensuse.org/package/retroshare06"><img alt="Yast oneclick logo" id="opensuse-oneclick" src="img/oneclick.png"></a></p>
-          <p>Link: </p>
-          <p>openSUSE 13.2 Harlequin <a href="http://download.opensuse.org/repositories/home:/AsamK:/RetroShare/openSUSE_13.2/i586/retroshare06-0.6.0-1.4.i586.rpm">v0.6.0 32bit</a>&nbsp;&nbsp;&nbsp;<a href="http://download.opensuse.org/repositories/home:/AsamK:/RetroShare/openSUSE_13.2/x86_64/retroshare06-0.6.0-1.4.x86_64.rpm">v0.6.0 64bit</a></p>
-          <p>openSUSE Leap 42.1 Malachite <a href="http://download.opensuse.org/repositories/home:/AsamK:/RetroShare/openSUSE_Leap_42.1/x86_64/retroshare06-0.6.1-3.1.x86_64.rpm">v0.6.1 64bit</a>&nbsp;&nbsp;&nbsp;</p> 
-          <p>openSUSE Tumbleweed / Factory Rolling Release <a href="https://software.opensuse.org/ymp/home:AsamK:RetroShare/openSUSE_Factory_ARM/retroshare06.ymp?base=openSUSE%3AFactory&query=retroshare06">v0.6.1 armv7hl</a>&nbsp;&nbsp;&nbsp;</p>
-          </p>
-          <p>Download binary or add Repository manually: </p>
-          <a href="https://software.opensuse.org/download.html?project=home%3AAsamK%3ARetroShare&package=retroshare06"><strong>Stable release</strong></a>&nbsp;&nbsp;&nbsp; 
-	      <a href="https://software.opensuse.org/download.html?project=home%3AAsamK%3ARetroShare&package=retroshare06-git"><strong>Nightly snapshot</strong></a></p>
-        </div>
-      </div>
-    </div>
-
-  <div class="row">
-    <div class="small-6 columns">
-      <div class="row package">
-        <div class="tiny-2 columns"><img alt="Slackware logo" src="img/slackware-logo.svg"></div>
-
-        <div class="tiny-10 columns">
-          <h2 id="slackware"><a href="#slackware">Slackware</a></h2>
-        </div>
-      </div>
-
-      <div class="row package">
-        <div class="columns">
-          <p>Retroshare is currently available on Slackware.</p>
-          <p><a href="https://slackbuilds.org/result/?search=retroshare">SlackBuilds Repository</a></p>
-        </div>
-      </div>
-    </div>
-
-    <div class="small-6 columns">
-      <div class="row package">
-        <div class="tiny-2 columns"><img alt="CentOS logo" src="img/centos-logo.svg"></div>
-
-        <div class="tiny-10 columns">
-          <h2 id="centos"><a href="#centos">CentOS</a></h2>
-        </div>
-      </div>
-
-      <div class="row package">
-        <div class="columns">
-          <p>Retroshare is currently available on CentOS.</p>
-          <p>Stable: <a href="https://software.opensuse.org/download.html?project=home%3AAsamK%3ARetroShare&package=retroshare06" target="_blank">OBS Stable</a></p>
-          <p>Nightly Builds: <a href="https://software.opensuse.org/download.html?project=home%3AAsamK%3ARetroShare&package=retroshare06-git" target="_blank">OBS Nightly</a></p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="small-6 columns">
-      <div class="row package">
-        <div class="tiny-2 columns"><img alt="Mageia logo" id="mageia" src="img/mageia-logo.svg"></div>
-
-        <div class="tiny-10 columns">
-          <h2 id="mageia"><a href="#mageia">Mageia</a></h2>
-        </div>
-      </div>
-
-      <div class="row package">
-        <div class="columns">
-          <p>Retroshare is currently available on Mageia.</p>
-
-          <p>Link: <a href="http://madb.mageia.org/package/show/name/retroshare/release/cauldron">Mageia</a></p>
-
-        </div>
-      </div>
-    </div>
-
-
-
-    <div class="small-6 columns">
-      <div class="row package">
-        <div class="tiny-2 columns"><img alt="ALT Linux logo" id="altlinux" src="img/altlinux-logo.png"></div>
-
-        <div class="tiny-10 columns">
-          <h2 id="altlinux"><a href="#altlinux">ALT Linux</a></h2>
-        </div>
-      </div>
-
-      <div class="row package">
-        <div class="columns">
-          <p>RetroShare is currently available on ALT Linux.</p>
-
-          <p>Link: <a href="https://packages.altlinux.org/en/srpms/retroshare" target="_blank">ALT Linux</a></p>
-
-        </div>
-      </div>
-    </div>
-  </div>
 
   <footer class="footer">
     <div class="row">

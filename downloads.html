@@ -150,33 +150,81 @@
 	</div>
 	<!-- /Android -->
 
+	<!-- AppImage -->
+	<div class="row package">
+		<div class="tiny-2 columns"><img alt="AppImage logo" id="appimage" src="img/appimage.svg" /></div>
+		<div class="tiny-10 columns">
+			<h2 id="appimage"><a href="#appimage">AppImage</a></h2>
+			<p>
+			If none of the distribution specific options fit your setup you
+			should try the following AppImages. Take care of selecting the one
+			which mach your CPU architecture (use x86_64 if you are unsure).
+			We expect those AppImages to work on most GNU/Linux distributions.
+			</p>
+			<ul>
+				<li><a href="https://github.com/RetroShare/RetroShare/releases/download/v0.6.4/RetroShare-Tor-0.6.4.20180313.0e6d27ad-x86_64.AppImage">Retroshare Tor-only x86_64</a></li>
+				<li><a href="https://github.com/RetroShare/RetroShare/releases/download/v0.6.4/RetroShare-0.6.4.20180313.0e6d27ad-x86_64.AppImage">Retroshare x86_64</a></li>
+				<li><a href="https://download.opensuse.org/repositories/network:/retroshare/AppImage.arm/retroshare-latest-armv7l.AppImage">Retroshare ARMv7</a></li>
+				<li><a href="https://download.opensuse.org/repositories/network:/retroshare/AppImage.arm/retroshare-latest-aarch64.AppImage">Retroshare ARMv8</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- /AppImage -->
+
+	<!-- ArchLinux -->
+	<div class="row package">
+		<div class="tiny-2 columns"><img alt="Arch Linux logo" id="archlinux" src="img/archlinux-logo.svg"></div>
+
+		<div class="tiny-10 columns">
+			<h2 id="arch"><a href="#arch">Arch Linux</a></h2>
+
+			<p>
+			We distribute current Retroshare for Arch Linux through our
+			<a href="https://build.opensuse.org/project/show/network:retroshare">OBS</a>
+			repository. To add it you can use the following commands:
+			</p>
+			<blockquote>
+			#1 <code>wget https://download.opensuse.org/repositories/network:/retroshare/Arch_Community_standard/x86_64/network_retroshare_Arch_Community_standard.key</code><br/>
+			#2 <code>pacman-key --add network_retroshare_Arch_Community_standard.key</code><br/>
+			#3 <code>echo '[retroshare]' >> /etc/pacman.conf</code><br/>
+			#4 <code>echo 'https://download.opensuse.org/repositories/network:/retroshare/Arch_Community_standard/x86_64/' >> /etc/pacman.conf</code><br/>
+			#5 <code>pacman -Sy</code><br/>
+			#6 <code>pacman -S retroshare</code><br/>
+			</blockquote>
+		</div>
+	</div>
+	<!-- /ArchLinux -->
+
 	<!-- Debian -->
 	<div class="row package">
 		<div class="tiny-2 columns"><img alt="Debian logo" id="debian" src="img/debian-logo.svg"></div>
 		<div class="tiny-10 columns">
-		<h2 id="debian"><a href="#debian">Debian</a></h2>
+			<h2 id="debian"><a href="#debian">Debian</a></h2>
 
-		<p>
-		We distribute current Retroshare for Debian through our
-		<a href="https://build.opensuse.org/project/show/network:retroshare">OBS</a>
-		repository. To istall it you can use the following commands:
-		</p>
+			<p>
+			We distribute current Retroshare for Debian through our
+			<a href="https://build.opensuse.org/project/show/network:retroshare">OBS</a>
+			repository. To add it you can use the following commands:
+			</p>
 
-		<h4>Debian 8</h4>
-		<blockquote>
-		#1 <code>wget -qO - http://download.opensuse.org/repositories/network:retroshare/Debian_8.0/Release.key | sudo apt-key add -</code><br/>
-		#2 <code>sudo sh -c "echo 'deb http://download.opensuse.org/repositories/network:/retroshare/Debian_8.0/ /' >> /etc/apt/sources.list.d/retroshare.list"</code><br/>
-		#3 <code>sudo apt-get update</code><br/>
-		#4 <code>sudo apt-get install retroshare</code><br/>
-		</blockquote>
+			<h5>Debian 8</h5>
+			<blockquote>
+			#1 <code>wget -qO - http://download.opensuse.org/repositories/network:retroshare/Debian_8.0/Release.key | sudo apt-key add -</code><br/>
+			#2 <code>sudo sh -c "echo 'deb http://download.opensuse.org/repositories/network:/retroshare/Debian_8.0/ /' >> /etc/apt/sources.list.d/retroshare.list"</code><br/>
+			</blockquote>
 
-		<h4>Debian 9</h4>
-		<blockquote>
-		#1 <code>wget -qO - http://download.opensuse.org/repositories/network:retroshare/Debian_9.0/Release.key | sudo apt-key add -</code><br/>
-		#2 <code>sudo sh -c "echo 'deb http://download.opensuse.org/repositories/network:/retroshare/Debian_9.0/ /' >> /etc/apt/sources.list.d/retroshare.list"</code><br/>
-		#3 <code>sudo apt-get update</code><br/>
-		#4 <code>sudo apt-get install retroshare</code><br/>
-		</blockquote>
+			<h5>Debian 9</h5>
+			<blockquote>
+			#1 <code>wget -qO - http://download.opensuse.org/repositories/network:retroshare/Debian_9.0/Release.key | sudo apt-key add -</code><br/>
+			#2 <code>sudo sh -c "echo 'deb http://download.opensuse.org/repositories/network:/retroshare/Debian_9.0/ /' >> /etc/apt/sources.list.d/retroshare.list"</code><br/>
+			</blockquote>
+
+			<p>And then install RetroShare with the following commands:</p>
+			<blockquote>
+			#3 <code>sudo apt-get update</code><br/>
+			#4 <code>sudo apt-get install retroshare</code><br/>
+			</blockquote>
+		</div>
 	</div>
 <!--
 	<p>
@@ -189,8 +237,43 @@
 	and then Retroshare 0.6.4 from <a href="https://github.com/RetroShare/RetroShare/releases/tag/v0.6.4">Github</a>.
 	</p>
 -->
-  </div>
 	<!-- /Debian -->
+
+
+	<!-- Fedora -->
+	<div class="row package">
+		<div class="tiny-2 columns"><img alt="Fedora logo" id="fedora" src="img/fedora-logo.svg"></div>
+
+		<div class="tiny-10 columns">
+			<h2 id="fedora"><a href="#fedora">Fedora</a></h2>
+			<p>
+			We distribute current Retroshare for Fedora through our
+			<a href="https://build.opensuse.org/project/show/network:retroshare">OBS</a>
+			repository. To add it you can use the following commands:
+			</p>
+
+			<h5>Fedora 25</h5>
+			<blockquote>
+			#1 <code>sudo dnf config-manager --add-repo=https://download.opensuse.org/repositories/network:/retroshare/Fedora_25/network:retroshare.repo</code><br/>
+			</blockquote>
+
+			<h5>Fedora 26</h5>
+			<blockquote>
+			#1 <code>sudo dnf config-manager --add-repo=https://download.opensuse.org/repositories/network:/retroshare/Fedora_26/network:retroshare.repo</code><br/>
+			</blockquote>
+
+			<h5>Fedora 27</h5>
+			<blockquote>
+			#1 <code>sudo dnf config-manager --add-repo=https://download.opensuse.org/repositories/network:/retroshare/Fedora_27/network:retroshare.repo</code><br/>
+			</blockquote>
+
+			<p>And then install RetroShare with the following commands:</p>
+			<blockquote>
+			#2 <code>sudo dnf install retroshare</code><br/>
+			</blockquote>
+		</div>
+	</div>
+	<!-- Fedora -->
 
 	<!-- Ubuntu -->
 	<div class="row package">
@@ -221,27 +304,6 @@
 		</div>
 	</div>
 	<!-- /Ubuntu -->
-
-	<!-- AppImage -->
-	<div class="row package">
-		<div class="tiny-2 columns"><img alt="AppImage logo" id="appimage" src="img/appimage.svg" /></div>
-		<div class="tiny-10 columns">
-			<h2 id="appimage"><a href="#appimage">AppImage</a></h2>
-			<p>
-			If none of the distriburion specific option fit your setup you
-			should try the following AppImages. Take care of selecting the one
-			which mach your CPU architecture (use x86_64 if you are unsure).
-			We expect those AppImages to work on most GNU/Linux distributions.
-			</p>
-			<ul>
-				<li><a href="https://github.com/RetroShare/RetroShare/releases/download/v0.6.4/RetroShare-Tor-0.6.4.20180313.0e6d27ad-x86_64.AppImage">Retroshare Tor-only x86_64</a></li>
-				<li><a href="https://github.com/RetroShare/RetroShare/releases/download/v0.6.4/RetroShare-0.6.4.20180313.0e6d27ad-x86_64.AppImage">Retroshare x86_64</a></li>
-				<li><a href="https://download.opensuse.org/repositories/network:/retroshare/AppImage.arm/retroshare-latest-armv7l.AppImage">Retroshare ARMv7</a></li>
-				<li><a href="https://download.opensuse.org/repositories/network:/retroshare/AppImage.arm/retroshare-latest-aarch64.AppImage">Retroshare ARMv8</a></li>
-			</ul>
-		</div>
-	</div>
-	<!-- /AppImage -->
 
 	<!-- Source Tarballs -->
 	<div class="row package">
@@ -290,34 +352,7 @@
       </div>
     </div>
 
-    <div class="small-6 columns">
-      <div class="row package">
-        <div class="tiny-2 columns">
-			<img alt="Arch Linux logo" id="archlinux" src="img/archlinux-logo.svg">
-		</div>
-
-        <div class="tiny-10 columns">
-          <h2 id="arch"><a href="#arch">Arch Linux</a></h2>
-        </div>
-      </div>
-
-      <div class="row package">
-        <div class="columns">
-          <p>Retroshare is currently available in Arch User Repository.</p>
-
-          <p>Stable: <a href="https://aur.archlinux.org/packages/retroshare/" target="_blank">Arch User Repository</a></p>
-          <p>Nightly Builds: <a href="https://aur.archlinux.org/packages/retroshare-git/" target="_blank">Arch User Repository</a></p>
-		
-		  <p>RetroShare Packages for Arch are also available on openSUSE Build Service</p>
-          <p>Stable: <a href="https://software.opensuse.org/download.html?project=home%3AAsamK%3ARetroShare&package=retroshare06" target="_blank">OBS Stable</a></p>
-          <p>Nightly Builds: <a href="https://software.opensuse.org/download.html?project=home%3AAsamK%3ARetroShare&package=retroshare06-git" target="_blank">OBS Nightly</a></p>
-
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
+    <div class="row">
     <div class="small-6 columns">
       <div class="row package">
         <div class="tiny-2 columns"><img alt="openSUSE logo" id="opensuse" src="img/opensuse-logo.svg"></div>
@@ -342,25 +377,6 @@
         </div>
       </div>
     </div>
-
-    <div class="small-6 columns">
-      <div class="row package">
-        <div class="tiny-2 columns"><img alt="Fedora logo" id="fedora" src="img/fedora-logo.svg"></div>
-
-        <div class="tiny-10 columns">
-          <h2 id="fedora"><a href="#fedora">Fedora</a></h2>
-        </div>
-      </div>
-
-      <div class="row package">
-        <div class="columns">
-          <p>Retroshare is currently available on Fedora 23 and 24.</p>
-          <p>Stable: <a href="https://software.opensuse.org/download.html?project=home%3AAsamK%3ARetroShare&package=retroshare06" target="_blank">OBS Stable</a></p>
-          <p>Nightly Builds: <a href="https://software.opensuse.org/download.html?project=home%3AAsamK%3ARetroShare&package=retroshare06-git" target="_blank">OBS Nightly</a></p>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <div class="row">
     <div class="small-6 columns">

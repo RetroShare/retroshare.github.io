@@ -74,166 +74,207 @@
   </div>
   </div>
 
-  <div class="row package">
-    <div class="tiny-2 columns"><img alt="Windows logo" src="img/windows-logo.svg"></div>
+	<!-- Windows -->
+	<div class="row package">
+		<div class="tiny-2 columns">
+			<img alt="Windows logo" src="img/windows-logo.svg">
+		</div>
 
-    <div class="tiny-10 columns">
-      <h2 id="windows"><a href="#windows">Windows XP / Vista / 7 / 10</a></h2>
-      <p>Links: 
-		<ul>
-			<li><a href="https://github.com/RetroShare/RetroShare/releases/download/v0.6.4/RetroShare-0.6.4-20180312-91634ba6-Qt-4.8.7-setup.exe">Retroshare-0.6.4-Qt4</a> Installer</li>
-			<li><a href="https://github.com/RetroShare/RetroShare/releases/download/v0.6.4/RetroShare-0.6.4-20180312-91634ba6-Qt-5.9.1-setup.exe">Retroshare-0.6.4-Qt5</a> Installer</li>
-			<li><a href="https://github.com/RetroShare/RetroShare/releases/download/v0.6.4/RetroShare-0.6.4-Windows-Portable-20180312-91634ba6-Qt-5.9.1-tor.7z">Retroshare (Tor Only version) Qt5, </a>Portable</li>
-		</p>
-      <p>The installers for Windows contains the portable and normal install, and plugins.</p>
-		<p>Checksums: <a href="https://github.com/RetroShare/RetroShare/releases/download/v0.6.4/chksums.txt.asc">checksum.txt</a></p>
-    </div>
-  </div>
-
-  <div class="row package">
-    <div class="tiny-2 columns"><img alt="AppImage logo" id="appimage" src="img/appimage.svg"></div>
-	  <div class="tiny-10 columns">
-      <h2 id="appimage"><a href="#appimage">Linux x86_64 AppImage</a></h2>
-		<p>
-			We provide two AppImage packages:
+		<div class="tiny-10 columns">
+			<h2 id="windows"><a href="#windows">Windows XP / Vista / 7 / 10</a></h2>
 			<ul>
-				<li><a href="https://github.com/RetroShare/RetroShare/releases/download/v0.6.4/RetroShare-0.6.4.20180313.0e6d27ad-x86_64.AppImage">Retroshare AppImage</a></li>
-				<li><a href="https://github.com/RetroShare/RetroShare/releases/download/v0.6.4/RetroShare-Tor-0.6.4.20180313.0e6d27ad-x86_64.AppImage">Retroshare AppImage, Tor-only version</a></li>
+				<li><a href="https://github.com/RetroShare/RetroShare/releases/download/v0.6.4/RetroShare-0.6.4-20180312-91634ba6-Qt-4.8.7-setup.exe">Retroshare-0.6.4-Qt4</a> Installer</li>
+				<li><a href="https://github.com/RetroShare/RetroShare/releases/download/v0.6.4/RetroShare-0.6.4-20180312-91634ba6-Qt-5.9.1-setup.exe">Retroshare-0.6.4-Qt5</a> Installer</li>
+				<li><a href="https://github.com/RetroShare/RetroShare/releases/download/v0.6.4/RetroShare-0.6.4-Windows-Portable-20180312-91634ba6-Qt-5.9.1-tor.7z">Retroshare (Tor Only version) Qt5, </a>Portable</li>
 			</ul>
-			These AppImage's have been successfully tested on Debian, Ubuntu and Mint, and probably work on many more linux distributions.
-		</p>
+			<p>The installers for Windows contains the portable, normal install, and plugins.</p>
+			<p>Checksums:<a href="https://github.com/RetroShare/RetroShare/releases/download/v0.6.4/chksums.txt.asc">checksum.txt</a></p>
+		</div>
 	</div>
+	<!-- /Windows -->
+
+	<!-- Mac OSX -->
+	<div class="row package">
+		<div class="tiny-2 columns"><img alt="Apple logo" id="mac" src="img/apple-logo.svg"></div>
+
+		<div class="tiny-10 columns">
+			<h2 id="mac"><a href="#mac">Mac OSX</a></h2>
+			<p>
+			RetroShare is currently available for OSX. Note: the packaging and
+			compilation is not ours. It's been made automatically using
+			<a href="https://travis-ci.org">Travis-CI</a>.
+			</p>
+			<p><a href="https://github.com/RetroShare/RetroShare/releases/download/v0.6.4/RetroShare-0.6.4-20180303.9d6e642-Mac-OSX.dmg">RetroShare_v0.6.4.dmg</a></p>
+			<p><a href="https://github.com/RetroShare/RetroShare/releases/download/v0.6.4/RetroShare-Tor-0.6.4-20180303.9d6e642-Mac-OSX.dmg">RetroShare_v0.6.4 TorOnly.dmg</a></p>
+			<p><a href="https://github.com/RetroShare/RetroShare/releases/download/v0.6.4/checksums.txt.asc">checksum.txt</a></p>
+		</div>
 	</div>
-  </div>
-	
-  <div class="row package">
-    <div class="tiny-2 columns"><img alt="Ubuntu logo" id="ubuntu" src="img/ubuntu-logo.svg"></div>
+	<!-- /Mac OSX -->
 
-    <div class="tiny-10 columns">
-      <h2 id="ubuntu"><a href="#ubuntu">Ubuntu</a></h2>
-      <p>Retroshare is currently available on all Ubuntu distributions up to Artful (17.10).<br></p>
+	<!-- GNU/Linux -->
+	<div class="row package">
+		<div class="tiny-2 columns"><img alt="Apple logo" id="mac" src="img/Gnulinux.svg"></div>
 
-      <p>To install Retroshare on ubuntu, please use one of the following two PPA repositories:</p>
+		<div class="tiny-10 columns">
+			<h2 id="mac"><a href="#mac">GNU/Linux</a></h2>
+			<p>
+			On most GNU/Linux distributions Retroshare is available along with
+			standard packages, so you should check before on your preferred
+			package manager if current RetroShare version is installable from
+			there.
+			If RetroShare is not available on your package manager or the
+			available version is outdated you can find detailed instructions for
+			each distribution we have tested down in this page.
+			</p>
+		</div>
+	</div>
+	<!-- /GNU/Linux -->
 
-      <p><strong>Stable:</strong> <a href="https://launchpad.net/~retroshare/+archive/ubuntu/stable">retroshare stable</a></p>
- 
-      <p><strong>Regular development snapshots:</strong> <a href="https://launchpad.net/~retroshare/+archive/ubuntu/unstable">retroshare unstable</a></p>
-
-      <p>Development snapshots are always tested and therefore reasonnably safe to use. They happen irregularly, with an average of 2 weeks between updates.</p>
-
-      <blockquote>
-        # for Retroshare releases only<br>
-        &nbsp;&nbsp;&nbsp;<strong>sudo add-apt-repository ppa:retroshare/stable</strong><br>
-        # for Retroshare development snapshots<br>
-        &nbsp;&nbsp;&nbsp;<strong>sudo add-apt-repository ppa:retroshare/unstable</strong><br>
-        # then<br>
-        &nbsp;&nbsp;&nbsp;<strong>sudo apt-get update</strong><br>
-        &nbsp;&nbsp;&nbsp;<strong>sudo apt-get install retroshare</strong><br>
-      </blockquote>
-
-<!--		<p><b>Important note: </b>Ubuntu package names have changed (to comply with standards). The new packages names drop the 06 suffix and are declared incompatible with the old packages. As a consequence, if you upgrade Retroshare, first uninstall existing packages then install the new ones:</p>
-      <blockquote>
-        &nbsp;&nbsp;&nbsp;<strong>sudo apt-get remove retroshare06</strong><br>
-        &nbsp;&nbsp;&nbsp;<strong>sudo apt-get install retroshare</strong><br>
-      </blockquote> -->
-		<!--<p>Packages for Ubuntu compatible for the Raspberry Pi are also available on <a href="https://github.com/RetroShare/RetroShare/releases/">GitHub</a></p>-->
-    </div>
-  </div>
-
-  <div class="row package">
-    <div class="tiny-2 columns"><img alt="Apple logo" id="mac" src="img/apple-logo.svg"></div>
-
-    <div class="tiny-10 columns">
-      <h2 id="mac"><a href="#mac">Mac OSX</a></h2>
-      <p>RetroShare is currently available for OSX. Note: the packaging and compilation is not ours. It's been made 
-			automatically using <a href="https://travis-ci.org">Travis-CI</a>.</p>
-      <p>Link: <a href="https://github.com/RetroShare/RetroShare/releases/download/v0.6.4/RetroShare-0.6.4-20180303.9d6e642-Mac-OSX.dmg">RetroShare_v0.6.4.dmg</a> </p>
-      <p>Link: <a href="https://github.com/RetroShare/RetroShare/releases/download/v0.6.4/RetroShare-Tor-0.6.4-20180303.9d6e642-Mac-OSX.dmg">RetroShare_v0.6.4 TorOnly.dmg</a> </p>
-		<p>Checksums: <a href="https://github.com/RetroShare/RetroShare/releases/download/v0.6.4/checksums.txt.asc">checksum.txt</a></p>
-    </div>
-  </div>
-
-  <div class="row package">
-    <div class="tiny-2 columns"><img alt="Debian logo" id="debian" src="img/debian-logo.svg"></div>
-	  <div class="tiny-10 columns">
-      <h2 id="debian"><a href="#debian">Debian</a></h2>
-      <p>
-        The easiest way to install Retroshare in Debian is through <a href="#appimage">AppImage</a>. 
-        It doesn't include any plugins, but other than that, it works perfectly.
-      </p>
-      <p>
-        Alternatively, you can install the debfile directly. However, due to
-        <a href="https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=850421">a bug</a> in libsqlcipher0-3.2.0, 
-      shipped with Debian Stretch, you will need to manually upgrade libsqlcipher0 to version
-      3.4.1 and then install our package.
-      To do that, please download and install first libsqlcipher0-3.4.1 from 
-      <a href="https://debian.pkgs.org/sid/debian-main-amd64/libsqlcipher0_3.4.1-1_amd64.deb.html#download">pkgs.org</a> 
-      and then Retroshare 0.6.4 from <a href="https://github.com/RetroShare/RetroShare/releases/tag/v0.6.4">Github</a>.
-      </p>
-      
-      <p>Note: unofficial stable and nightly builds are also available here:</p>
-      <p><strong>Stable:</strong> <a href="https://software.opensuse.org/download.html?project=home%3AAsamK%3ARetroShare&package=retroshare06">retroshare</a></p>
-	  <p><strong>Nightly Builds:</strong> <a href=
-      "https://software.opensuse.org/download.html?project=home%3AAsamK%3ARetroShare&package=retroshare06-git">retroshare-unstable</a></p>      
-      <p>To receive RetroShare via your package manager, you can add the repository to your sources.</p>
-      
-      <blockquote>
-        # for Retroshare releases only<br>
-        &nbsp;&nbsp;&nbsp;<strong>sudo sh -c "echo 'deb http://download.opensuse.org/repositories/home:/AsamK:/RetroShare/Debian_8.0/ /' >> /etc/apt/sources.list.d/retroshare06.list"</strong><br>
-        # for Retroshare nightly builds<br>
-        &nbsp;&nbsp;&nbsp;<strong>sudo sh -c "echo 'deb http://download.opensuse.org/repositories/home:/AsamK:/RetroShare/Debian_8.0/ /' >> /etc/apt/sources.list.d/retroshare06-git.list" </strong><br>
-        # then<br>
-        &nbsp;&nbsp;&nbsp;<strong>wget -qO - http://download.opensuse.org/repositories/home:AsamK:RetroShare/Debian_8.0/Release.key | sudo apt-key add -</strong><br>
-        &nbsp;&nbsp;&nbsp;<strong>sudo apt-get update</strong><br>
-        &nbsp;&nbsp;&nbsp;<strong>sudo apt-get install retroshare06</strong><br>
-      </blockquote>
-      
-    </div>
-  </div>
-
+	<!-- Android -->
 	<div class="row package">
 		<div class="tiny-2 columns"><img alt="Android logo" id="android" src="img/android-logo.svg"></div>
 		<div class="tiny-10 columns"><h2 id="android"><a href="#android">Android</a></h2>
 			<p>
-				We provide an experimental build of <a href="">Retroshare for Android</a> which only provides chat. 
-  				More information is available on the <a href="https://retroshareteam.wordpress.com/2018/03/13/release-notes-for-v0-6-4/">release blog post for version 0.6.4.</a>
-				</p>
-				<p>
-				You can also download RetroShare for Android Alpha prototype
-				packages from the
-				<a href="retroshare://channel?name=RetroShare%20Android%20builds%20by%20G10h4ck&id=e78125439fff723b3b15bb77b8f25dba">RetroShare Android builds by G10h4ck</a>
-				channel or from the
-				<a href="https://coppermine.diveni.re/~gio/RetroShare_Android/apk/" target="_blank">HTTP mirror</a>.
+			We maintain an experimental
+			<a href="https://f-droid.org/packages/org.retroshare.android.qml_app/">
+			RetroShare for Android package on F-Droid</a>
+			which only provides chat.<br/><br/>
+			Android experts may also be interested in trying development
+			snapshots from the
+			<a href="retroshare://channel?name=RetroShare%20Android%20builds%20by%20G10h4ck&id=e78125439fff723b3b15bb77b8f25dba">RetroShare Android builds by G10h4ck</a>
+			channel to give us feedback and hopefully submit patches.
+			We strongly discourage the usage of development snapshots on a non
+			development device.
 			</p>
 		</div>
 	</div>
+	<!-- /Android -->
 
-  <div class="row package">
-    <div class="tiny-2 columns"><img alt="Tar.gz logo" src="img/tgz-logo.svg"></div>
+	<!-- Debian -->
+	<div class="row package">
+		<div class="tiny-2 columns"><img alt="Debian logo" id="debian" src="img/debian-logo.svg"></div>
+		<div class="tiny-10 columns">
+		<h2 id="debian"><a href="#debian">Debian</a></h2>
 
-    <div class="tiny-10 columns">
-      <h2 id="source"><a href="#source">Source Tarballs</a></h2>
-      <p>Link: <a href="https://github.com/RetroShare/RetroShare/archive/v0.6.4.tar.gz">RetroShare-0.6.4.tar.gz</a> <a href="https://github.com/RetroShare/RetroShare/releases/download/v0.6.4/chksums.txt.asc">checksums</a></p>
-      
-      <p>Development Snapshots from GitHub: <a href="https://github.com/RetroShare/RetroShare/archive/master.tar.gz">.tar.gz</a> <a href="https://github.com/RetroShare/RetroShare/archive/master.zip">.zip</a></p>
-      <p>Mirror at GitLab (unofficial): <a href="https://gitlab.com/RetroShare/RetroShare/repository/archive.tar.gz?ref=master">.tar.gz</a> <a href="https://gitlab.com/RetroShare/RetroShare/repository/archive.zip?ref=master">.zip</a> <a href="https://gitlab.com/RetroShare/RetroShare/repository/archive.tar.bz2?ref=master">.tar.bz2</a> <a href="https://gitlab.com/RetroShare/RetroShare/repository/archive.tar?ref=master">.tar</a></p>
+		<p>
+		We distribute current Retroshare for Debian through our
+		<a href="https://build.opensuse.org/project/show/network:retroshare">OBS</a>
+		repository. To istall it you can use the following commands:
+		</p>
 
-    </div>
+		<h4>Debian 8</h4>
+		<blockquote>
+		#1 <code>wget -qO - http://download.opensuse.org/repositories/network:retroshare/Debian_8.0/Release.key | sudo apt-key add -</code><br/>
+		#2 <code>sudo sh -c "echo 'deb http://download.opensuse.org/repositories/network:/retroshare/Debian_8.0/ /' >> /etc/apt/sources.list.d/retroshare.list"</code><br/>
+		#3 <code>sudo apt-get update</code><br/>
+		#4 <code>sudo apt-get install retroshare</code><br/>
+		</blockquote>
+
+		<h4>Debian 9</h4>
+		<blockquote>
+		#1 <code>wget -qO - http://download.opensuse.org/repositories/network:retroshare/Debian_9.0/Release.key | sudo apt-key add -</code><br/>
+		#2 <code>sudo sh -c "echo 'deb http://download.opensuse.org/repositories/network:/retroshare/Debian_9.0/ /' >> /etc/apt/sources.list.d/retroshare.list"</code><br/>
+		#3 <code>sudo apt-get update</code><br/>
+		#4 <code>sudo apt-get install retroshare</code><br/>
+		</blockquote>
+	</div>
+<!--
+	<p>
+	Alternatively, you can install the debfile directly. However, due to
+	<a href="https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=850421">a bug</a> in libsqlcipher0-3.2.0,
+	shipped with Debian Stretch, you will need to manually upgrade libsqlcipher0 to version
+	3.4.1 and then install our package.
+	To do that, please download and install first libsqlcipher0-3.4.1 from
+	<a href="https://debian.pkgs.org/sid/debian-main-amd64/libsqlcipher0_3.4.1-1_amd64.deb.html#download">pkgs.org</a>
+	and then Retroshare 0.6.4 from <a href="https://github.com/RetroShare/RetroShare/releases/tag/v0.6.4">Github</a>.
+	</p>
+-->
   </div>
+	<!-- /Debian -->
+
+	<!-- Ubuntu -->
+	<div class="row package">
+		<div class="tiny-2 columns"><img alt="Ubuntu logo" id="ubuntu" src="img/ubuntu-logo.svg"></div>
+
+		<div class="tiny-10 columns">
+			<h2 id="ubuntu"><a href="#ubuntu">Ubuntu</a></h2>
+			<p>
+			We distribute current Retroshare for Ubuntu through our
+			<a href="https://launchpad.net/~retroshare/+archive/ubuntu/stable">PPA</a>
+			repository. To istall it you can use the following commands:
+			</p>
+
+			<blockquote>
+			#1 <code>sudo add-apt-repository ppa:retroshare/stable</code><br/>
+			#2 <code>sudo apt-get update</code><br/>
+			#3 <code>sudo apt-get install retroshare</code><br/>
+			</blockquote>
+
+			<br/>
+			<p>
+			Advanced user may be insterested in developemnt snapshot to give use
+			feedback on latest developments, in that case you should add instead
+			the <code>ppa:retroshare/unstable</code>
+			<a href="https://launchpad.net/~retroshare/+archive/ubuntu/unstable">PPA</a>.
+			repository
+			</p>
+		</div>
+	</div>
+	<!-- /Ubuntu -->
+
+	<!-- AppImage -->
+	<div class="row package">
+		<div class="tiny-2 columns"><img alt="AppImage logo" id="appimage" src="img/appimage.svg" /></div>
+		<div class="tiny-10 columns">
+			<h2 id="appimage"><a href="#appimage">AppImage</a></h2>
+			<p>
+			If none of the distriburion specific option fit your setup you
+			should try the following AppImages. Take care of selecting the one
+			which mach your CPU architecture (use x86_64 if you are unsure).
+			We expect those AppImages to work on most GNU/Linux distributions.
+			</p>
+			<ul>
+				<li><a href="https://github.com/RetroShare/RetroShare/releases/download/v0.6.4/RetroShare-Tor-0.6.4.20180313.0e6d27ad-x86_64.AppImage">Retroshare Tor-only x86_64</a></li>
+				<li><a href="https://github.com/RetroShare/RetroShare/releases/download/v0.6.4/RetroShare-0.6.4.20180313.0e6d27ad-x86_64.AppImage">Retroshare x86_64</a></li>
+				<li><a href="https://download.opensuse.org/repositories/network:/retroshare/AppImage.arm/retroshare-latest-armv7l.AppImage">Retroshare ARMv7</a></li>
+				<li><a href="https://download.opensuse.org/repositories/network:/retroshare/AppImage.arm/retroshare-latest-aarch64.AppImage">Retroshare ARMv8</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- /AppImage -->
+
+	<!-- Source Tarballs -->
+	<div class="row package">
+		<div class="tiny-2 columns"><img alt="Tar.gz logo" src="img/tgz-logo.svg"></div>
+		<div class="tiny-10 columns">
+			<h2 id="source"><a href="#source">Source Tarballs</a></h2>
+			<p>
+			As always we honour our Free as in Freedom software for a Free
+			Society stance, so you can download the source code from the
+			following links:<br/>
+			<a href="https://github.com/RetroShare/RetroShare/archive/v0.6.4.tar.gz">RetroShare-0.6.4.tar.gz</a><br/>
+			<a href="https://github.com/RetroShare/RetroShare/archive/v0.6.4.zip">RetroShare-0.6.4.zip</a><br/>
+			<a href="https://github.com/RetroShare/RetroShare/releases/download/v0.6.4/chksums.txt.asc">checksums</a>
+			</p>
+		</div>
+	</div>
+	<!-- /Source Tarballs -->
 
 
 
 
   <div class="row">
     <div class="columns">
-      <h2>Unofficial packages</h2>
+      <h2>Independently Maintained Packages</h2>
     </div>
   </div>
 
   <div class="row">
     <div class="small-6 columns">
       <div class="row package">
-        <div class="tiny-2 columns"><img alt="FreeBSD logo" id="freebsd" src="img/freebsd-logo.svg"></div>
+        <div class="tiny-2 columns">
+			<img alt="FreeBSD logo" id="freebsd" src="img/freebsd-logo.svg">
+		</div>
 
         <div class="tiny-10 columns">
           <h2 id="freebsd"><a href="#freebsd">FreeBSD</a></h2>
@@ -251,7 +292,9 @@
 
     <div class="small-6 columns">
       <div class="row package">
-        <div class="tiny-2 columns"><img alt="Arch Linux logo" id="archlinux" src="img/archlinux-logo.svg"></div>
+        <div class="tiny-2 columns">
+			<img alt="Arch Linux logo" id="archlinux" src="img/archlinux-logo.svg">
+		</div>
 
         <div class="tiny-10 columns">
           <h2 id="arch"><a href="#arch">Arch Linux</a></h2>

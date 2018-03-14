@@ -286,7 +286,9 @@
 			You can instal it with the following command:
 			</p>
 			<blockquote>
-			#1 <code>emerge -avq retroshare</code><br/>
+			#0 <code>mkdir -p /etc/portage/package.keywords/</code><br/>
+			#1 <code>echo "=net-p2p/retroshare-0.6.4 ~*" >> /etc/portage/package.keywords/retroshare</code><br/>
+			#2 <code>emerge -avq retroshare</code><br/>
 			</blockquote>
 		</div>
 	</div>

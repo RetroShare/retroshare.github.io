@@ -290,19 +290,9 @@
 			repository. To add it you can use the following commands:
 			</p>
 
-			<h5>Fedora 25</h5>
+			<h5>Fedora 25-27</h5>
 			<blockquote>
-			#1 <code>sudo dnf config-manager --add-repo=https://download.opensuse.org/repositories/network:/retroshare/Fedora_25/network:retroshare.repo</code><br/>
-			</blockquote>
-
-			<h5>Fedora 26</h5>
-			<blockquote>
-			#1 <code>sudo dnf config-manager --add-repo=https://download.opensuse.org/repositories/network:/retroshare/Fedora_26/network:retroshare.repo</code><br/>
-			</blockquote>
-
-			<h5>Fedora 27</h5>
-			<blockquote>
-			#1 <code>sudo dnf config-manager --add-repo=https://download.opensuse.org/repositories/network:/retroshare/Fedora_27/network:retroshare.repo</code><br/>
+			#1 <code>sudo dnf config-manager --add-repo=https://download.opensuse.org/repositories/network:/retroshare/Fedora_$(rpm -E %fedora)/network:retroshare.repo</code><br/>
 			</blockquote>
 
 			<p>And then install RetroShare with the following commands:</p>

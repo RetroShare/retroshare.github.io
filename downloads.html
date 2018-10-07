@@ -202,10 +202,13 @@
 			<blockquote>
 			#1 <code>wget https://download.opensuse.org/repositories/network:/retroshare/Arch_Community_standard/x86_64/network_retroshare_Arch_Community_standard.key</code><br/>
 			#2 <code>pacman-key --add network_retroshare_Arch_Community_standard.key</code><br/>
-			#3 <code>echo '[retroshare]' >> /etc/pacman.conf</code><br/>
-			#4 <code>echo 'https://download.opensuse.org/repositories/network:/retroshare/Arch_Community_standard/x86_64/' >> /etc/pacman.conf</code><br/>
+			#3 <code>echo '[network_retroshare_Arch_Community_standard]' >> /etc/pacman.conf</code><br/>
+			#4 <code>echo 'Server = https://download.opensuse.org/repositories/network:/retroshare/Arch_Community_standard/x86_64/' >> /etc/pacman.conf</code><br/>
+			#5 <code>pacman-key --finger "network OBS Project &lt;network@build.opensuse.org&gt;"</code><br/>
+			#6 <code>pacman-key --lsign-key "network OBS Project &lt;network@build.opensuse.org&gt;"</code><br/>
 			#5 <code>pacman -Sy</code><br/>
 			#6 <code>pacman -S retroshare</code><br/>
+			<p>Alternatively you can use the package independently maintained on <a href="https://aur.archlinux.org/packages/retroshare/">AUR</a>.</p>
 			</blockquote>
 		</div>
 	</div>
@@ -340,7 +343,7 @@
 			</blockquote>
 			<br/>
 			<p>
-			While Retroshare is independently maintained on
+			While RetroShare is independently maintained on
 			<a href="http://madb.mageia.org/package/show/name/retroshare/release/cauldron">Mageia Cauldron</a>.
 			</p>
 		</div>

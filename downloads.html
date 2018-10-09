@@ -247,23 +247,16 @@
 			<a href="https://build.opensuse.org/project/show/network:retroshare">OBS</a>
 			repository. To add it you can use the following commands:
 			</p>
-
-			<h5>Debian 8</h5>
 			<blockquote>
-			#1 <code>wget -qO - http://download.opensuse.org/repositories/network:retroshare/Debian_8.0/Release.key | sudo apt-key add -</code><br/>
-			#2 <code>sudo sh -c "echo 'deb http://download.opensuse.org/repositories/network:/retroshare/Debian_8.0/ /' >> /etc/apt/sources.list.d/retroshare.list"</code><br/>
-			</blockquote>
-
-			<h5>Debian 9</h5>
-			<blockquote>
-			#1 <code>wget -qO - http://download.opensuse.org/repositories/network:retroshare/Debian_9.0/Release.key | sudo apt-key add -</code><br/>
-			#2 <code>sudo sh -c "echo 'deb http://download.opensuse.org/repositories/network:/retroshare/Debian_9.0/ /' >> /etc/apt/sources.list.d/retroshare.list"</code><br/>
+			#1 <code>export DEBIAN_MAJOR_VERSION=$(source /etc/os-release ; echo $VERSION_ID | awk -F. '{print $1}')</code><br/>
+			#2 <code>wget -qO - http://download.opensuse.org/repositories/network:retroshare/Debian_${DEBIAN_MAJOR_VERSION}.0/Release.key | sudo apt-key add -</code><br/>
+			#3 <code>sudo sh -c "echo 'deb http://download.opensuse.org/repositories/network:/retroshare/Debian_${DEBIAN_MAJOR_VERSION}.0/ /' >> /etc/apt/sources.list.d/retroshare.list"</code><br/>
 			</blockquote>
 
 			<p>And then install RetroShare with the following commands:</p>
 			<blockquote>
-			#3 <code>sudo apt-get update</code><br/>
-			#4 <code>sudo apt-get install retroshare</code><br/>
+			#1 <code>sudo apt-get update</code><br/>
+			#2 <code>sudo apt-get install retroshare</code><br/>
 			</blockquote>
 		</div>
 	</div>
@@ -420,15 +413,34 @@
 		<div class="tiny-10 columns">
 			<h2 id="ubuntu"><a href="#ubuntu">Ubuntu</a></h2>
 			<p>
-			We distribute current Retroshare for Ubuntu through our
+			We distribute current RetroShare for Ubuntu through our
+			<a href="https://build.opensuse.org/project/show/network:retroshare">OBS</a>
+			and
 			<a href="https://launchpad.net/~retroshare/+archive/ubuntu/stable">PPA</a>
-			repository. To istall it you can use the following commands:
+			repositories. You can choose
+			<a href="https://build.opensuse.org/project/show/network:retroshare">OBS</a>
+			or
+			<a href="https://launchpad.net/~retroshare/+archive/ubuntu/stable">PPA</a>
+			according to your tastes but be carefull to add only one of them.<br/>
+			To add the one you choose use the following commands:
 			</p>
 
+			<h5>OBS</h5>
+			<blockquote>
+			#1 <code>source /etc/os-release</code><br/>
+			#2 <code>wget -qO - https://download.opensuse.org/repositories/network:/retroshare/xUbuntu_${VERSION_ID}/Release.key | sudo apt-key add -</code><br/>
+			#3 <code>sudo sh -c "echo 'deb https://download.opensuse.org/repositories/network:/retroshare/xUbuntu_${VERSION_ID}/ /' >> /etc/apt/sources.list.d/retroshare_OBS.list"</code><br/>
+			</blockquote>
+
+			<h5>PPA</h5>
 			<blockquote>
 			#1 <code>sudo add-apt-repository ppa:retroshare/stable</code><br/>
-			#2 <code>sudo apt-get update</code><br/>
-			#3 <code>sudo apt-get install retroshare</code><br/>
+			</blockquote>
+
+			<p>Thein install RetroShare with:</p>
+			<blockquote>
+			#1 <code>sudo apt-get update</code><br/>
+			#2 <code>sudo apt-get install retroshare</code><br/>
 			</blockquote>
 
 			<br/>

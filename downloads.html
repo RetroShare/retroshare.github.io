@@ -266,17 +266,6 @@
 			</p>
 		</div>
 	</div>
-<!--
-	<p>
-	Alternatively, you can install the debfile directly. However, due to
-	<a href="https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=850421">a bug</a> in libsqlcipher0-3.2.0,
-	shipped with Debian Stretch, you will need to manually upgrade libsqlcipher0 to version
-	3.4.1 and then install our package.
-	To do that, please download and install first libsqlcipher0-3.4.1 from
-	<a href="https://debian.pkgs.org/sid/debian-main-amd64/libsqlcipher0_3.4.1-1_amd64.deb.html#download">pkgs.org</a>
-	and then Retroshare 0.6.4 from <a href="https://github.com/RetroShare/RetroShare/releases/tag/v0.6.4">Github</a>.
-	</p>
--->
 	<!-- /Debian -->
 
 
@@ -452,26 +441,13 @@
 			<p>
 			We distribute current RetroShare for Ubuntu through our
 			<a href="https://build.opensuse.org/project/show/network:retroshare">OBS</a>
-			and
-			<a href="https://launchpad.net/~retroshare/+archive/ubuntu/stable">PPA</a>
-			repositories. You can choose
-			<a href="https://build.opensuse.org/project/show/network:retroshare">OBS</a>
-			or
-			<a href="https://launchpad.net/~retroshare/+archive/ubuntu/stable">PPA</a>
-			according to your tastes but be carefull to add only one of them.<br/>
-			To add the one you choose use the following commands:
+			repository. To add it you can use the following commands:
 			</p>
 
-			<h5>OBS</h5>
 			<blockquote>
 			#1 <code>source /etc/os-release</code><br/>
 			#2 <code>wget -qO - https://download.opensuse.org/repositories/network:/retroshare/xUbuntu_${VERSION_ID}/Release.key | sudo apt-key add -</code><br/>
 			#3 <code>sudo sh -c "echo 'deb https://download.opensuse.org/repositories/network:/retroshare/xUbuntu_${VERSION_ID}/ /' >> /etc/apt/sources.list.d/retroshare_OBS.list"</code><br/>
-			</blockquote>
-
-			<h5>PPA</h5>
-			<blockquote>
-			#1 <code>sudo add-apt-repository ppa:retroshare/stable</code><br/>
 			</blockquote>
 
 			<p>Thein install RetroShare with:</p>
@@ -479,15 +455,6 @@
 			#1 <code>sudo apt-get update</code><br/>
 			#2 <code>sudo apt-get install retroshare</code><br/>
 			</blockquote>
-
-			<br/>
-			<p>
-			Advanced user may be insterested in development snapshots to give us
-			feedback on latest developments, in that case you should add instead
-			the <code>ppa:retroshare/unstable</code>
-			<a href="https://launchpad.net/~retroshare/+archive/ubuntu/unstable">PPA</a>
-			repository.
-			</p>
 		</div>
 	</div>
 	<!-- /Ubuntu -->

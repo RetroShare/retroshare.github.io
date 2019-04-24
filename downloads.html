@@ -233,15 +233,28 @@
 			<h2 id="debian"><a href="#debian">Debian</a></h2>
 
 			<p>
-			We distribute current Retroshare for Debian stable i586 and x86_64
-			through our
+			We distribute current Retroshare for Debian through our
 			<a href="https://build.opensuse.org/project/show/network:retroshare">OBS</a>
 			repository. To add it you can use the following commands:
 			</p>
+
+			<p>
+			Determine your Debian version,
+			<a href="https://build.opensuse.org/project/show/network:retroshare">OBS</a>
+			builds RetroShare packages for Debian 8.0, 9.0, Testing and Ustable:
+			</p>
 			<blockquote>
-			#1 <code>export DEBIAN_MAJOR_VERSION=$(source /etc/os-release ; echo $VERSION_ID | awk -F. '{print $1}')</code><br/>
-			#2 <code>wget -qO - http://download.opensuse.org/repositories/network:retroshare/Debian_${DEBIAN_MAJOR_VERSION}.0/Release.key | sudo apt-key add -</code><br/>
-			#3 <code>sudo sh -c "echo 'deb http://download.opensuse.org/repositories/network:/retroshare/Debian_${DEBIAN_MAJOR_VERSION}.0/ /' >> /etc/apt/sources.list.d/retroshare.list"</code><br/>
+			#1 <code>export DEBIAN_VERSION="9.0"</code><br/>
+			</blockquote>
+
+			<p>
+			Add RetroShare
+			<a href="https://build.opensuse.org/project/show/network:retroshare">OBS</a>
+			as trusted packages repository:
+			</p>
+			<blockquote>
+			#1 <code>wget -qO - http://download.opensuse.org/repositories/network:retroshare/Debian_${DEBIAN_VERSION}/Release.key | sudo apt-key add -</code><br/>
+			#2 <code>sudo sh -c "echo 'deb http://download.opensuse.org/repositories/network:/retroshare/Debian_${DEBIAN_VERSION}/ /' >> /etc/apt/sources.list.d/retroshare.list"</code><br/>
 			</blockquote>
 
 			<p>And then install RetroShare with the following commands:</p>
@@ -250,10 +263,15 @@
 			#2 <code>sudo apt-get install retroshare</code><br/>
 			</blockquote>
 
+			<p>Or look fore more RetroShare packages with the following commands:</p>
+			<blockquote>
+			#1 <code>sudo apt-cache search retroshare</code><br/>
+			</blockquote>
+
 			<p>
-			If you use another Debian version/architecture or you encounter
-			problems installing or using the package, we suggests you to try the
-			RetroShare AppImage instead.
+			If you can't finde a proper package for your Debian
+			version/architecture or you encounter problems installing or using
+			the packages, we suggests you to try the RetroShare AppImage instead.
 			</p>
 		</div>
 	</div>
@@ -271,8 +289,6 @@
 			<a href="https://build.opensuse.org/project/show/network:retroshare">OBS</a>
 			repository. To add it you can use the following commands:
 			</p>
-
-			<h5>Fedora 25-27</h5>
 			<blockquote>
 			#1 <code>sudo dnf config-manager --add-repo=https://download.opensuse.org/repositories/network:/retroshare/Fedora_$(rpm -E %fedora)/network:retroshare.repo</code><br/>
 			</blockquote>
@@ -311,7 +327,7 @@
 		<div class="tiny-10 columns">
 			<h2 id="mageia"><a href="#mageia">Mageia</a></h2>
 			<p>
-			We distribute current Retroshare for Mageia 6 through our
+			We distribute current Retroshare for Mageia through our
 			<a href="https://build.opensuse.org/project/show/network:retroshare">OBS</a>
 			repository. To install you can use the following commands:
 			</p>
@@ -320,11 +336,6 @@
 			#2 <code>urpmi.update -a</code><br/>
 			#3 <code>urpmi retroshare</code><br/>
 			</blockquote>
-			<br/>
-			<p>
-			While RetroShare is independently maintained on
-			<a href="http://madb.mageia.org/package/show/name/retroshare/release/cauldron">Mageia Cauldron</a>.
-			</p>
 		</div>
 	</div>
 	<!-- /Mageia -->

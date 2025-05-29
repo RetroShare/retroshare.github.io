@@ -227,10 +227,10 @@
 				<p>
 				Determine your Debian version,
 				<a href="https://build.opensuse.org/project/show/network:retroshare">OBS</a>
-				builds RetroShare packages for Debian 8.0, 9.0, 10, Testing and Ustable:
+				builds RetroShare packages for Debian 8.0, 9.0, 10, 11, 12 Testing and Ustable:
 				</p>
 				<blockquote>
-				#1 <code>export DEBIAN_VERSION="9.0"</code><br/>
+				#1 <code>export DEBIAN_VERSION="12"</code><br/>
 				</blockquote>
 
 				<p>
@@ -239,7 +239,7 @@
 				as trusted packages repository:
 				</p>
 				<blockquote>
-				#1 <code>wget -qO - http://download.opensuse.org/repositories/network:retroshare/Debian_${DEBIAN_VERSION}/Release.key | sudo apt-key add -</code><br/>
+				#1 <code>wget -qO - http://download.opensuse.org/repositories/network:retroshare/Debian_${DEBIAN_VERSION}/Release.key | sudo tee /etc/apt/trusted.gpg.d/Retroshare.asc</code><br/>
 				#2 <code>sudo sh -c "echo 'deb http://download.opensuse.org/repositories/network:/retroshare/Debian_${DEBIAN_VERSION}/ /' > /etc/apt/sources.list.d/retroshare.list"</code><br/>
 				</blockquote>
 
@@ -407,7 +407,7 @@
 				<summary>Additional options</summary>
 				 To add it you can use the following commands:
 				<blockquote>
-				#1 <code>wget -qO - http://download.opensuse.org/repositories/network:retroshare/Raspbian_10/Release.key | sudo apt-key add -</code><br/>
+				#1 <code>wget -qO - http://download.opensuse.org/repositories/network:retroshare/Raspbian_10/Release.key | sudo tee /etc/apt/trusted.gpg.d/Retroshare.asc</code><br/>
 				#2 <code>sudo sh -c "echo 'deb http://download.opensuse.org/repositories/network:/retroshare/Raspbian_10/ /' > /etc/apt/sources.list.d/retroshare.list"</code><br/>
 				</blockquote>
 
@@ -473,7 +473,7 @@
 				To add it you can use the following commands:
 				<blockquote>
 				#1 <code>source /etc/os-release</code><br/>
-				#2 <code>wget -qO - https://download.opensuse.org/repositories/network:/retroshare/xUbuntu_${VERSION_ID}/Release.key | sudo apt-key add -</code><br/>
+				#2 <code>wget -qO - https://download.opensuse.org/repositories/network:/retroshare/xUbuntu_${VERSION_ID}/Release.key | sudo tee /etc/apt/trusted.gpg.d/Retroshare.asc</code><br/>
 				#3 <code>sudo sh -c "echo 'deb https://download.opensuse.org/repositories/network:/retroshare/xUbuntu_${VERSION_ID}/ /' > /etc/apt/sources.list.d/retroshare_OBS.list"</code><br/>
 				</blockquote>
 
